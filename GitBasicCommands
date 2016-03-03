@@ -1,0 +1,26 @@
+>mkdir test
+
+>cd test
+
+>git init
+
+>git remote add origin https://github.com/USERNAME/test.git
+
+>gedit README
+
+>git add README/ git add . --to add all the files in the current directory
+
+>git commit -m 'Lable like-- first commit'
+
+>git push origin master
+then enter your username and password
+
+>git commit --soft HEAD^ --if we don't want that commit we have already done but we want to keep the changes then we go for soft
+
+>git commit --hard HEAD^  -- if we don't want recent commit and we even don't want to keep the changes.
+
+>git clone https://github.com/USERNAME/test.git
+--we want to clone the test repository into other machine 
+
+>git pull origin master
+
