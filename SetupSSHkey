@@ -1,0 +1,25 @@
+Setup SSH key....
+
+So, you have created your account at github and now you want to work with it from your terminal.
+
+Before you start installing Github, you should set up ssh keys:
+
+    $cd ~/.ssh
+
+    if it says "bash: cd: ./.ssh:No such file or directory",it means its not generated and  you should continue with step 2. But if it changes to ~/.ssh directory,  continue from step 3.
+    open your terminal any type
+
+     $ssh-keygen -t rsa -C "your_email@youremail.com"
+
+    you will get following lines: 'Generating public/private rsa ket pair. Enter file in which to save the key(/Home/ubuntu/.ssh/id_rsa):' just press enter now it will ask you to enter passphrase note that passphrase you enter must be >4, otherwise you will have to repeat whole process again.
+    Backup and remove existing SSh keys type 'ls' it should show you some files like now type these following commands one by one 
+    
+$ mkdir key_backup
+$ cp id_rsa* key_backup
+$ rm id_rsa*
+
+ Adding your ssh key to Github
+
+$gedit id_rsa.pub
+
+copy its entire content. Open github site and login. go to “Account Settings” > Click “SSH Public Keys” > Click “Add another public  key” an paste it  into "key field". then press Add key.
