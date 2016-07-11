@@ -47,3 +47,5 @@ Here are some useful queries you can do to see the git state of things:
     git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s" a colorful text-base graph of changes. See image on the right.
 
 ssh -vT git@github.com       to debug the SSH connection
+
+git remote set-url origin git://github.com/YourDirectory/YourProject.git
