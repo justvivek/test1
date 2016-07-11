@@ -1,0 +1,47 @@
+Installation...
+
+In your terminal type following command
+
+$ sudo apt-get install git-core git-gui git-doc
+
+Working with git...
+
+Cloning:
+
+In terminal type
+
+$ git clone git@github.com:username/projectname.git
+
+to download a local copy of your code branch. You'll need to replace "username" with your GitHub user name and project name with the name of project on github.
+
+To configure git:
+
+Setup git with your name and email address
+
+    git config --global user.name "Your Name"
+
+    git config --global user.email "your@email.com"
+
+To do a scripts/reconfig, make, perform some changes to the code, ...
+
+Modify or create a file and then push it to your project fork on GitHub.
+
+    git add new_or_existing_file.c
+
+    git commit
+
+    git push origin master
+
+Occasionally you will want to sync up your fork to the main project branch and pull down any official changes by doing git pull upstream master which is the equivalent of manually doing:
+
+git fetch upstream
+
+git merge upstream/master
+
+Here are some useful queries you can do to see the git state of things:
+
+    git remote -v to see your fetch and push remotes
+    git status to see what you have recently changed
+    git log to see a list of all committed changes done to your fork
+    git log --stat a more detailed list of all committed changes done to your fork
+    git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s" a colorful text-base graph of changes. See image on the right.
